@@ -25,6 +25,9 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/products', [ProductController::class, 'index']);
 Route::post('/cart', [CartController::class, 'createCart']);
+Route::get('/test', function(){
+    return "hallo";
+});
 
 
 // Protected routes: Users
