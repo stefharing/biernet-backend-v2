@@ -23,6 +23,11 @@ class AuthController extends Controller
             'role' => 0
         ]);
 
+        Cart::create([
+            'user_id' => $user->id,
+            'total' => 0
+        ]);
+
         $token = $user->createToken('myapptoken', ['server:admin'])->plainTextToken;
 
         $response = [

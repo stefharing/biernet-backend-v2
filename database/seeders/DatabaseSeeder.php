@@ -16,21 +16,21 @@ class DatabaseSeeder extends Seeder
     {
         Product::create(
             [
-                'name' => 'bier1',
+                'name' => 'Heineken',
                 'description' => 'een lekker biertje',
                 'price' => 10,
                 'category' => 'IPA'
             ],
 
             [
-                'name' => 'bier2',
+                'name' => 'Hertog',
                 'description' => 'nog een lekker biertje',
                 'price' => 8,
                 'category' => 'Wit'
             ],
 
             [
-                'name' => 'bier3',
+                'name' => 'Jupiler',
                 'description' => 'weer een lekker biertje',
                 'price' => 5,
                 'category' => 'Blond'
